@@ -20,13 +20,17 @@ namespace SmartSolutionsItaly\CakePHP\Manifest\Config;
 
 use Cake\Routing\Router;
 
-Router::plugin('SmartSolutionsItaly/CakePHP/Manifest', function ($routes) {
-    $routes->connect('/manifest', ['controller' => 'manifest', 'action' => 'index'])
+Router::plugin('SmartSolutionsItaly/CakePHP/Manifest', ['path' => '/manifest'], function ($routes) {
+    $routes->get('', ['controller' => 'Manifest', 'action' => 'index'])
         ->setExtensions(['json']);
+});
 
-    $routes->connect('/ieconfig', ['controller' => 'manifest', 'action' => 'ieconfig'])
+Router::plugin('SmartSolutionsItaly/CakePHP/Manifest', ['path' => '/ieconfig'], function ($routes) {
+    $routes->get('', ['controller' => 'Manifest', 'action' => 'ieconfig'])
         ->setExtensions(['xml']);
+});
 
-    $routes->connect('/site', ['controller' => 'manifest', 'action' => 'chrome'])
+Router::plugin('SmartSolutionsItaly/CakePHP/Manifest', ['path' => '/site'], function ($routes) {
+    $routes->get('', ['controller' => 'Manifest', 'action' => 'chrome'])
         ->setExtensions(['webmanifest']);
 });

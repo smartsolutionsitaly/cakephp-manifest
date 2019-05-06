@@ -18,6 +18,7 @@
 
 namespace SmartSolutionsItaly\CakePHP\Manifest\Controller;
 
+use Cake\Controller\Controller;
 use SmartSolutionsItaly\CakePHP\Manifest\Manifest;
 
 /**
@@ -26,7 +27,7 @@ use SmartSolutionsItaly\CakePHP\Manifest\Manifest;
  * @author Lucio Benini <dev@smartsolutions.it>
  * @since 1.0.0
  */
-class ManifestController extends AppController
+class ManifestController extends Controller
 {
     /**
      * Handles the "index" action.
