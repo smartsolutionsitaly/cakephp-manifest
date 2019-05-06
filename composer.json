@@ -1,0 +1,41 @@
+{
+	"name" : "smartsolutionsitaly/cakephp-manifest",
+	"description" : "Manifest support for CakePHP",
+	"keywords" : [
+		"cakephp",
+		"controller",
+		"manifest"
+	],
+	"type" : "cakephp-plugin",
+	"license" : "MIT",
+	"require-dev" : {
+        "php" : ">=7.0",
+		"cakephp/cakephp" : "^3.6",
+		"smartsolutionsitaly/cakephp-marketplace" : "^1.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"SmartSolutionsItaly\\CakePHP\\Manifest\\" : "src"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"SmartSolutionsItaly\\CakePHP\\Manifest\\Test\\" : "tests",
+			"Cake\\Test\\" : "./vendor/cakephp/cakephp/tests"
+		}
+	},
+	"homepage" : "https://github.com/smartsolutionsitaly/cakephp-manifest",
+	"authors" : [{
+			"name" : "Lucio Benini",
+			"email" : "dev@smartsolutions.it",
+			"homepage" : "https://smartsolutions.it",
+			"role" : "Web Developer"
+		}
+	],
+	"support" : {
+		"email" : "info@smartsolutions.it",
+		"issues" : "https://github.com/smartsolutionsitaly/cakephp-manifest/issues",
+		"wiki" : "https://github.com/smartsolutionsitaly/cakephp-manifest/wiki",
+		"source" : "https://github.com/smartsolutionsitaly/cakephp-manifest"
+	}
+}
